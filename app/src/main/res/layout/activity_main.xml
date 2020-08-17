@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#011624"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/on"
+        >
+
+    </ImageView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="300dp"
+        >
+
+        <Button
+            android:id="@+id/readBook"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_shape"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_margin="10dp"
+            android:text="إقراء الكتاب">
+
+        </Button>
+
+
+        <Button
+            android:id="@+id/about"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_shape"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:layout_margin="10dp"
+            android:textSize="20sp"
+            android:text="عن الرواية">
+
+        </Button>
+
+        <Button
+            android:id="@+id/share"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_shape"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_margin="10dp"
+            android:text="مشاركة التطبيق">
+
+        </Button>
+
+
+
+    </LinearLayout>
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="FULL_WIDTHx52"
+        ads:adUnitId="ca-app-pub-5329195808649014/9926647941">
+    </com.google.android.gms.ads.AdView>
+
+
+
+
+</RelativeLayout>
